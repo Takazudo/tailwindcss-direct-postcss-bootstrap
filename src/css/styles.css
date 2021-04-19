@@ -1,19 +1,21 @@
 @tailwind base;
 @tailwind components;
 
-.btn {
-  @apply mt-3 bg-black mt-[12345px];
-}
-@screen md {
-  .btn {
-    @apply bg-white;
+.Block {
+  @apply text-pink-500;
+  @screen md {
+    & {
+      @apply bg-white;
+    }
+  }
+  @screen lg {
+    & {
+      @apply bg-purple-600;
+    }
   }
 }
-@screen lg {
-  .btn {
-    @apply bg-purple-600;
-  }
+.Block__Element {
+  @apply mt-3 bg-black mt-[12345px] mr-[-100px];
 }
+
 @tailwind utilities;
-
-
